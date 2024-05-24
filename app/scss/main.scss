@@ -1,4 +1,4 @@
-
+$second-font: "Playfair Display", serif;
 body {
   font-size: 18px;
   color: #817664;
@@ -225,18 +225,18 @@ header .call-mob-menu .line:nth-child(2) {
   margin: 3px 0
 }
 
-header+* {
+header + * {
   margin-top: 94px
 }
 
 @media (max-width: 1199px) {
-  header+* {
+  header + * {
     margin-top: 131px
   }
 }
 
 @media (max-width: 1199px) {
-  header+* {
+  header + * {
     margin-top: 61px
   }
 }
@@ -293,8 +293,8 @@ header+* {
   }
 }
 
-@media (max-width: 768px){
-  .double-img:before{
+@media (max-width: 768px) {
+  .double-img:before {
     display: none;
   }
 }
@@ -974,7 +974,7 @@ footer .logo {
 }
 
 .hp-5 {
-  padding: 140px 0 76px
+  padding: 53px 0;
 }
 
 @media (max-width: 768px) {
@@ -1003,7 +1003,7 @@ footer .logo {
 }
 
 .hp-5 .faq-list .item {
-  margin-bottom: 9px
+  margin-bottom: 25px
 }
 
 .hp-5 .faq-list .item.open .question-icon:after {
@@ -1019,7 +1019,7 @@ footer .logo {
   cursor: pointer;
   font-size: 22px;
   font-weight: 400;
-  padding: 11px 30px;
+  padding: 15px 25px;
   -webkit-transition: all ease .25s;
   -o-transition: all ease .25s;
   transition: all ease .25s;
@@ -1045,26 +1045,28 @@ footer .logo {
 }
 
 .hp-5 .faq-list .question:hover {
-  background: #FFE5CA;
+  //background: #FFE5CA;
 }
 
 .hp-5 .faq-list .question-icon {
   position: relative;
-  width: 26px;
-  height: 26px;
+  width: 46px;
+  height: 46px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 2px solid #817664;
+  border: 1px solid #002833;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin-right: 15px
+  margin-right: 15px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
   .hp-5 .faq-list .question-icon {
-    width: 16px;
-    height: 16px
+    width: 26px;
+    height: 26px
   }
 }
 
@@ -1072,9 +1074,9 @@ footer .logo {
 .hp-5 .faq-list .question-icon:after {
   content: '';
   position: absolute;
-  width: 16px;
-  height: 2px;
-  background: #817664;
+  width: 26px;
+  height: 3px;
+  background: #002833;
   left: 3px;
   top: 10px;
   -webkit-transition: all ease .25s;

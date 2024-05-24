@@ -16,6 +16,17 @@
 //         lazyLoad: 'ondemand',
     });
 
+    $('.gallery-slider').slick({
+        dots: true,
+        slideToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $('.prev-arr'),
+        nextArrow: $('.next-arr'),
+        rtl: true,
+//         lazyLoad: 'ondemand',
+    });
+
 
 
 $(document).ready(function(e){
