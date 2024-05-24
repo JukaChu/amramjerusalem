@@ -1,4 +1,4 @@
-$(window).on('load', function() {
+
     $('.slider-big').slick({
         slideToShow: 1,
         slidesToScroll: 1,
@@ -8,13 +8,14 @@ $(window).on('load', function() {
 //         lazyLoad: 'ondemand',
     });
     $('.slider-text').slick({
+        dots: true,
         slideToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         rtl: true,
 //         lazyLoad: 'ondemand',
     });
-});
+
 
 
 $(document).ready(function(e){
