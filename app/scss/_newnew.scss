@@ -1685,17 +1685,17 @@ main {
 .modal.pop-up-info-modal-v2 .modal-dialog {
   max-width: 100%;
   padding: 60px 80px;
-  margin: 60px auto;
+  margin: 10px auto;
   overflow-y: auto;
 }
 
 .modal.pop-up-info-modal-v2 .modal-content {
   background: url("../img/images/bgmodal.jpg") no-repeat center / cover;
   padding: 30px 45px 12px;
-  max-height: 100%;
+  //max-height: 100%;
+
   #content_modal {
-    //max-height: 100%;
-    //overflow-y: auto;
+    width: 100%;
   }
 }
 
