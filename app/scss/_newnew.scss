@@ -1687,6 +1687,7 @@ main {
   padding: 60px 80px;
   margin: 10px auto;
   overflow-y: auto;
+  height: calc(100% - 60px);
 }
 
 .modal.pop-up-info-modal-v2 .modal-content {
