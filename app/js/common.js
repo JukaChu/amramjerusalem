@@ -130,11 +130,16 @@ $(document).ready(function(e){
         var fromTop = $(this).scrollTop() + $('header').outerHeight(),
             menuItems = $('.main-menu .menu-item a'),
             scrollItems = menuItems.map(function () {
-                var item = $($(this).attr('href'));
+                var item = $(this).attr('href');
                 if (item.length) return item;
             });
         var cur = scrollItems.map(function () {
-            if ($(this).offset().top < fromTop) return this;
+            if ($(this)) {
+
+            } else {
+                if ($(this).offset().top < fromTop) return this;
+            }
+
         });
         cur = cur[cur.length - 1];
         var id = cur && cur.length ? cur[0].id : '';
